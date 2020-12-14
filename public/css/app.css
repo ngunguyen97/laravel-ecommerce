@@ -665,6 +665,26 @@ footer {
   margin-bottom: 40px;
 }
 
+.cart-count {
+  padding: 3px 6px 3px 5px;
+  border: 1px solid #c79e0c;
+  background: #d3a018;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 13px;
+  margin-left: 5px;
+  font-weight: bold;
+}
+
+.cart-options {
+  background-color: white;
+  border: 0;
+  color: #212121;
+  text-decoration: none;
+  font: inherit;
+  cursor: pointer;
+}
+
 h1.checkout {
   margin-top: 30px;
 }
@@ -777,5 +797,24 @@ h1.checkout {
 
 .checkout-section .have-code-container input[type="submit"] {
   border: 1px solid #919191;
+}
+
+.alter {
+  padding: 15px;
+  margin-top: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.alter-success {
+  color: #3c763c;
+  background-color: #dff0d8;
+  border-color: #d6e9d6;
+}
+
+.alter-danger {
+  color: #a94442;
+  background-color: #f2dede;
+  border-color: #edccd1;
 }
 
