@@ -17,7 +17,7 @@
 @import 'components/sidebar';
 @import 'components/might-like';
 @import 'components/form';
-
+@import 'components/pagination';
 // Layout
 @import 'layout/header';
 @import 'layout/footer';
@@ -29,3 +29,4 @@
 @import 'pages/cart';
 @import 'pages/checkout';
 @import 'pages/alter';
+@import 'pages/thankyou';
