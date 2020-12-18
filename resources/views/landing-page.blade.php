@@ -20,19 +20,7 @@
         <header class="with-background">
             <div class="top-nav container">
                 <div class="logo">Laravel Ecommerce</div>
-                <ul>
-                    <li><a href="{{ route('shop.index') }}">Shop</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="{{ route('cart.index') }}">Cart 
-                        @if (Cart::instance('default')->count() > 0 )
-                        <span class="cart-count">{{ Cart::instance('default')->count() }}</span><span></span>
-                        @else 
-                        <span class="cart-count">0</span><span></span>
-                        @endif
-                    </a>
-                    </li>
-                </ul>
+                {{ menu('main-menu', 'partials.menus.main-menu') }}
             </div> <!-- end top-nav -->
             <div class="hero container">
                 <div class="hero-copy">
