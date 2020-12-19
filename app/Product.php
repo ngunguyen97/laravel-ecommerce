@@ -14,6 +14,6 @@ class Product extends Model
     }
 
     public function scopeMightAlsoLike($query) {
-        return $query->inRandomOrder()->take(4);
+        return $query->where('featured', 1)->inRandomOrder()->take(4);
     }
 }

@@ -22,6 +22,7 @@ class CategoryTableSeeder extends Seeder
             ['name' => 'Tables', 'slug' => 'tables', 'created_at' => $now, 'updated_at' => $now],
             ['name' => 'Tvs', 'slug' => 'tvs', 'created_at' => $now, 'updated_at' => $now],
             ['name' => 'Appliances', 'slug' => 'appliances', 'created_at' => $now, 'updated_at' => $now],
+            ['name' => 'Instruments', 'slug' => 'instruments', 'created_at' => $now, 'updated_at' => $now],
         ]);
     }
 }
