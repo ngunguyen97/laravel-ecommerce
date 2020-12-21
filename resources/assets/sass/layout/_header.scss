@@ -1,81 +1,92 @@
 header.with-background {
-    background: url('/img/triangles.svg');
-    background-size: cover;
-    color: $white;
+  background: url('/img/triangles.svg');
+  background-size: cover;
+  color: $white;
 
-    .top-nav {
-      display: flex;
-      justify-content: space-between;
-      padding: 40px 0;
+  .top-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+    letter-spacing: 1.5px;
 
-      .logo {
-        font-weight: bold;
-        font-size: 28px;
-      }
-
-      ul {
-        display: flex;
-        text-transform: uppercase;
-        justify-content: space-between;
-        width: 40%;
-
-        a {
-          color: $white;
-          &:hover {
-            color: darken($white, 10%);
-          }
-        }
-
-      }
+    .logo {
+      font-weight: bold;
+      font-size: 28px;
     }
 
-    .hero {
-      display: grid;
-      grid-template-columns: 1fr 1fr; //repeat(2, 1fr)
-      grid-gap: $gutter;
-      padding-top: 20px;
-      padding-bottom: 84px;
+    ul {
+      // display: flex;
+      // text-transform: uppercase;
+      // justify-content: space-between;
+      // width: 40%;
 
-      .hero-image {
-        padding-left: 60px;
-      }
-
-      h1 {
-        font-size: 52px;
-        margin-top: 50px;
-      }
-
-      p {
-        margin: 40px 0 68px;
-      }
-
-      .button {
-        margin-right: 14px;
-      }
-    }
-  }
-
-  header {
-    background: $gray-background;
-
-    .top-nav {
-      display: flex;
-      justify-content: space-between;
-      padding: 30px 0;
-
-      .logo {
-        font-weight: bold;
-        font-size: 28px;
+      a {
         color: $white;
+        &:hover {
+          color: darken($white, 10%);
+        }
       }
 
-      ul {
-        display: flex;
-        text-transform: uppercase;
-        justify-content: space-between;
-        width: 40%;
-        padding-top: 8px;
-        font-weight: 400;
+    }
+  }
+
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr; //repeat(2, 1fr)
+    grid-gap: $gutter;
+    padding-top: 20px;
+    padding-bottom: 84px;
+
+    .hero-image {
+      padding-left: 60px;
+    }
+
+    h1 {
+      font-size: 52px;
+      margin-top: 50px;
+    }
+
+    p {
+      margin: 40px 0 68px;
+    }
+
+    .button {
+      margin-right: 14px;
+    }
+  }
+}
+
+header {
+  background: $gray-background;
+
+  .top-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+    letter-spacing: 1.5px;
+
+    .logo {
+      font-weight: bold;
+      font-size: 28px;
+      color: $white;
+      margin-right: 58px;
+    }
+
+    ul {
+      display: flex;
+      text-transform: uppercase;
+      // justify-content: space-between;
+      // width: 40%;
+      padding-top: 8px;
+      font-weight: 400;
+
+      li {
+        margin-right: 38px;
+        
+        &:last-child {
+          margin-right: 0;
+        }
+      }
 
         a {
           color: $white;
@@ -85,5 +96,11 @@ header.with-background {
         }
 
       }
-    }
   }
+  .top-nav-left {
+    display:flex;
+  }
+  .top-nav-right {
+    display: flex;
+  }
+}

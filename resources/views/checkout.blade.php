@@ -41,7 +41,11 @@
 
                     <div class="form-group">
                         <label for="email">Email Address</label>
+                        @if (Auth::check())
+                        <input type="email" class="form-control" id="email" name="email" value="{{ Auth::user()->email }}" readonly>
+                        @else 
                         <input type="email" class="form-control" id="email" name="email" value="{{ old('email') }}">
+                        @endif
                         @if ($errors->has('email'))
                           <p class="error">{{ $errors->first('email') }}</p>
                         @endif
